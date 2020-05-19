@@ -1,0 +1,1 @@
+<textarea name="<?=$campo->getIdcampo()?>" rows="2" cols="30"></textarea>

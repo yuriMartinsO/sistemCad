@@ -1,0 +1,1 @@
+<input class="input-campo-inteiro form-control text-center" type="number" name="<?=$campo->getIdcampo()?>">

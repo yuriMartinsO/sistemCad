@@ -1,0 +1,1 @@
+<input class="input-campo-data form-control text-center" type="date" name="<?=$campo->getIdcampo()?>">

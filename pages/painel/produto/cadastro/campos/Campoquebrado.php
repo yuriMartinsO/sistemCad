@@ -1,0 +1,1 @@
+<input class="input-campo-quebrado form-control text-center" type="text" name="<?=$campo->getIdcampo()?>">
