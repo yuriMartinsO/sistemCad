@@ -1,0 +1,57 @@
+/* PAGINA DE CADASTRO */
+.pagina-cadastro-produto {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pagina-cadastro-produto .title {
+    text-align: center;
+    margin-bottom: 47px;
+}
+.pagina-cadastro-produto .nav-link.active {
+    background-color: red;
+}
+.pagina-cadastro-produto .grupos-itens-container #nav-tabContent .card {
+    width: 45%;
+    display: inline-block;
+    margin: 13px;
+}
+
+/* PAGINA DE CONFIGURAÇÃO DE CADASTRO */
+.pag-conf-cad-prod {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pag-conf-cad-prod #MENSAGEMRETORNO {
+    font-size: 26px;
+    color: red;
+}
+.pag-conf-cad-prod .title {
+    text-align: center;
+    margin: 47px 0px 47px;
+}
+.pag-conf-cad-prod .grupos-itens-container #nav-tabContent .card {
+    width: 45%;
+    display: inline-block;
+    margin: 13px;
+}
+.pag-conf-cad-prod .grupos-itens-container .list-group .list-group-item span {
+    color: red;
+    float: right;
+}
+.pag-conf-cad-prod #nav-tabContent .card .card-header span {
+    color: red;
+    float: right;
+}
+.pag-conf-cad-prod .grupos-itens-container .botao-container-adicionar-campo {
+    text-align: center;
+    margin-top: 13px;
+}
+.pag-conf-cad-prod .grupos-itens-container .botao-container-adicionar-grupo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.pag-conf-cad-prod #modalAddCampo input#exampleFormControlFile1 {
+    margin-bottom: 22px;
+}

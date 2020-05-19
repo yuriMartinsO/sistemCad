@@ -1,0 +1,1 @@
+<option value=<?=$grupo->getIdgrupo()?>> <?=$grupo->getNomegrupo()?> </option>
