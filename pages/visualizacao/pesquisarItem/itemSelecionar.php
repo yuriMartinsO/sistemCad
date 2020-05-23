@@ -1,0 +1,1 @@
+<a style="cursor:pointer" class="idItem" idItem="<?=$item->getIditem()?>"><li><?=$item->getNome()?></li></a>

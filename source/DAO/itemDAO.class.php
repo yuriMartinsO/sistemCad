@@ -10,11 +10,65 @@
             return " `item` ";
         }
 
+        public function consultaPorIdItem($item) {
+            global $QueryController;
+            $campos = " * ";
+            $nomeTabela = $this->getTabela();
+            $where = " `iditem`= ". "'" .$item . "'";
+            $retorno = $QueryController->read($nomeTabela,$where,$campos);
+    
+            if (gettype($retorno) == "array") {
+                $itens = [];
+    
+                foreach($retorno as $linha => $valor) {
+                    $item = new Item;
+                    $item->getDadosPorPost($valor);
+                    $itens[$linha] = $item;
+                }
+    
+                return $itens;
+            } else {
+                return false;
+            }
+        }    
+
         function setObject($classObject) {
             $this->iditem = $classObject->getIditem();
             $this->nome = $classObject->getNome();
             $this->idgrupo = $classObject->getIdgrupo();
             $this->dados = $classObject->getDados();
+        }
+
+        function consultarPorPesquisa($idgrupo,$pesquisa, $campos = " * ") {
+            global $QueryController;
+            $nomeTabela = $this->getTabela();
+
+            $where = "(";
+            foreach ($pesquisa as $palavra) {
+                if(strlen($palavra) != 2) {
+                    $where .= " `dados` LIKE ". "'%" . $palavra . "%' OR";
+                    $where .= " `nome` LIKE ". "'%" . $palavra . "%' OR";
+                }
+            }
+
+            $where = substr($where, 0, -2);
+            $where .= ")";
+            $where .= " AND `idgrupo` = ". "'" .$idgrupo. "'";
+            $retorno = $QueryController->read($nomeTabela,$where,$campos);
+
+            if (gettype($retorno) == "array") {
+                $itens = [];
+
+                foreach($retorno as $linha => $valor) {
+                    $item = new Item;
+                    $item->getDadosPorPost($valor);
+                    $itens[$linha] = $item;
+                }
+
+                return $itens;
+            } else {
+                return false;
+            }
         }
 
         function listarNomeAtributos($incluirId = false) {
