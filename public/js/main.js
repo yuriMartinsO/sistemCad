@@ -24,3 +24,49 @@ $(function() {
         imgs[i].src = imgs[i].attributes.caminho.value;
     }
 });
+
+//Clique nos itens gera um modal
+function executarModal() {
+
+    setInterval(function(){ 
+        if (!$('#exampleModalLong').hasClass("show") && !$("body").hasClass("modal-open")) {
+            //remove o modal se não esiver sendo utilizado
+            $("#modalItem").remove();
+        }
+    }, 500);
+
+    $(document).on("click",".idItem",function() {
+        $.ajax({
+            url : urlSite + "/source/ACTION/mostrarModalItem.php",
+            type : 'post',
+            data : {
+                id: $(this).attr("idItem")
+            },
+            success: function(data) {
+                document.body.innerHTML+= data;
+                $("#botaoModal").click();
+                $(".input-campo-quebrado").maskMoney({decimal:",", thousands:"."});
+            }
+        });
+    });
+}
+
+function confirmarExclusaoItem(id) {
+    if(confirm("deseja realmente excluir o item?")) {
+        $.ajax({
+            url : urlSite + "/source/ACTION/excluirProduto.php",
+            type : 'post',
+            data : {
+                id: id
+            },
+            success: function(data) {
+                alert(data);
+                location.reload();
+            }
+        });
+    }
+}
+
+$( document ).ready(function() {
+    executarModal();
+});

@@ -12,6 +12,5 @@
         session_destroy();
         session_start();
         $_SESSION['usuario'] = $idUsuario;
-        echo $_SESSION['usuario'];
     }
 ?>

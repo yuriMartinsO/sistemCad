@@ -5,6 +5,7 @@
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">Tipo de Valor: Texto</li>
+            <li class="list-group-item">Obrigatorio: Sim</li>
         </ul>
     </div>
     <?php CampoController::listaCampos($grupo)?>

@@ -12,6 +12,12 @@
             $this->dados = $dadosJson->getDados();
         }
 
+        public function getDadosPorPost($dataPost) {
+            foreach ($dataPost as $key => $value) {
+                $this->$key = $value;
+            }
+        }
+
         public static function getInstance() {
             if (self::$instance == null) {
                 self::$instance = new Item;
