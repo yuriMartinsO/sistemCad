@@ -44,7 +44,7 @@
 }
 .pagina-cadastro-produto .grupos-itens-container #nav-tabContent .card {
     width: 45%;
-    display: inline-block;
+    display: inline-flex;
     margin: 13px;
 }
 
