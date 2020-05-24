@@ -1,8 +1,39 @@
 /* PAGINA DE CADASTRO */
 .pagina-cadastro-produto {
     max-width: 1200px;
+    margin-bottom: 54px;
     margin-left: auto;
     margin-right: auto;
+}
+.pagina-cadastro-produto .tipo-campo-cor {
+    text-align: center;
+}
+.pagina-cadastro-produto .tipo-campo-SimNao {
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pagina-cadastro-produto .input-campo-arquivo-container,.input-campo-imagem-container {
+    margin-top: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 192px;
+}
+.pagina-cadastro-produto .menuVoltar {
+    text-align: center;
+    margin-top: 18px;
+    width: 131px;
+    height: 34px;
+}
+.pagina-cadastro-produto .menuVoltar:hover {
+    background: #cec3c3;
+}
+.pagina-cadastro-produto .menuVoltar:hover a {
+    text-decoration: none;
+}
+.pagina-cadastro-produto .botao-container-adicionar-campo {
+    text-align: center;
+    margin-top: 19px;
 }
 .pagina-cadastro-produto .title {
     text-align: center;
@@ -20,6 +51,7 @@
 /* PAGINA DE CONFIGURAÇÃO DE CADASTRO */
 .pag-conf-cad-prod {
     max-width: 1200px;
+    margin-bottom: 54px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -54,4 +86,16 @@
 }
 .pag-conf-cad-prod #modalAddCampo input#exampleFormControlFile1 {
     margin-bottom: 22px;
+}
+.pag-conf-cad-prod .menu {
+    text-align: center;
+    margin-top: 18px;
+    width: 131px;
+    height: 34px;
+}
+.pag-conf-cad-prod .menu:hover {
+    background: #cec3c3;
+}
+.pag-conf-cad-prod .menu:hover a{
+    text-decoration: none;
 }

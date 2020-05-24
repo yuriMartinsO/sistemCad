@@ -4,7 +4,7 @@ $data = date("d/m/Y", strtotime($dataAmericana));
 $dadosItem->setValor($data);
 ?>
 
-<div class="card tipo-campo-texto">
+<div class="card itemModal itemModalData">
     <div class="card-header">
         <?=$dadosItem->getNome()?>
     </div>

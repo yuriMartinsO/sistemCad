@@ -3,7 +3,9 @@ include '../header.php';
 ?>
     <body>
         <div class="pag-conf-cad-prod">
-            <a href="<?=$urlPainel?>">MENU</a>
+            <h4 class="menu">
+                <a href="<?=$urlPainel?>">MENU</a>
+            <h4>
             <div id="MENSAGEMRETORNO"></div>
             <div class="title">
                 <h1>CONFIGURAÇÕES DE CADASTRO</h1>

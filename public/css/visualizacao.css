@@ -1,3 +1,76 @@
 .index-visualizacao {
     max-width: 1173px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.index-visualizacao .menu {
+    text-align: center;
+    margin-top: 18px;
+    width: 131px;
+    height: 34px;
+}
+.index-visualizacao .menu:hover {
+    background: #cec3c3;
+}
+.index-visualizacao .menu:hover a{
+    text-decoration: none;
+}
+.index-visualizacao .lista-de-grupo {
+    margin-top: 29px;
+    list-style: none;
+}
+.index-visualizacao .lista-de-grupo li {
+    margin-top: 10px;
+}
+.index-visualizacao .lista-de-grupo li:hover {
+    background: #a2a2d2;
+}
+.index-visualizacao .lista-de-grupo a {
+    margin-top: ;
+    font-size: 28px;
+    color: #000000;
+    text-decoration: none;
+}
+.index-visualizacao .pesquisa-container .pesquisaForm {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+}
+.index-visualizacao .listaItens li {
+    margin-top: 14px;
+    list-style: none;
+    font-size: 20px;
+}
+.index-visualizacao .listaItens li:hover {
+    background: #ef8b8b;
+}
+#modalItem .itemModal {
+    margin-bottom: 23px;
+    text-align: center;
+}
+#modalItem .itemModalCor p {
+    height: 25px;
+    margin-top: 14px;
+}
+#modalItem .itemModalSimNao div {
+    height: 42px;
+}
+#modalItem .itemModalSimNao .form-check {
+    margin-top: 4px;
+}
+#modalItem .itemModalArquivo #customFile,.itemModalImagem #customFile {
+    margin-left: auto;
+    margin-right: auto;
+    width: 348px;
+    margin-top: 10px;
+}
+#modalItem .itemModalArquivo p, .itemModalImagem p {
+    font-size: 16px;   
+}
+#modalItem .itemModalArquivo a, .itemModalImagem a {
+    font-size: 28px;   
+}
+#modalItem .itemModalTexto p {
+    margin-top: 24px;
 }

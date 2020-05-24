@@ -1,4 +1,4 @@
-<div class="card tipo-campo-texto">
+<div class="card itemModal itemModalQuebrado">
     <div class="card-header">
         <?=$dadosItem->getNome()?>
     </div>

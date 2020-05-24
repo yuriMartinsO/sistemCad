@@ -1,5 +1,5 @@
-<li>
-    <a href="pesquisarItem?grupo=<?=$grupo->getIdgrupo()?>">
+<a href="pesquisarItem?grupo=<?=$grupo->getIdgrupo()?>">
+    <li>
         <?=$grupo->getNomegrupo()?>
-    </a>
-</li>
+    </li>    
+</a>
