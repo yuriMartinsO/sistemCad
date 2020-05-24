@@ -22,7 +22,7 @@ $id = $_GET['id'];
 $itemDAO = ItemDAO::getInstance();
 $item = $itemDAO->consultaPorIdItem($id)[0];
 
-$grupoDAO = grupoDAO::getInstance();
+$grupoDAO = GrupoDAO::getInstance();
 $grupo = $grupoDAO->consultaPorIdGrupo($item->getIdgrupo())[0];
 
 if($grupo->getIdusuario() != $_SESSION['usuario']) {
