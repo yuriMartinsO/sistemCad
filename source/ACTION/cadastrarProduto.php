@@ -35,7 +35,7 @@
 
     $camposNaoPreenchidos = "";
     foreach($campos as $chave => $campo) {
-        $valor = array_key_exists($chave,$_POST) ? $_POST[$chave] : $_FILES[$chave]['type'];
+        $valor = array_key_exists($chave,$_POST) ? $_POST[$chave] : $_FILES[$chave]['name'];
 
         if($campo->getObrigatorio() && $valor == "") {
             $camposNaoPreenchidos .= $campo->getNomecampo();
