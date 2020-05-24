@@ -35,7 +35,7 @@ class UsuarioDAO extends DAO {
         $where = " `email`= ". "'" . $email. "'" . " and " . " `senha`=" . "'" . $senha . "'";
         $retorno = $QueryController->read($nomeTabela,$where,$campos);
 
-        if (gettype($retorno) == "array") {
+        if ($retorno) {
             return true;
         } else {
             return false;
