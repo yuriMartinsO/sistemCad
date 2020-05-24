@@ -3,9 +3,9 @@ session_start();
 include '../painel/header.php';
 ?>
     <body>
-        <a href="<?=$urlPainel?>">MENU</a>
-        <div id="MENSAGEMRETORNO"></div>
         <div class="index-visualizacao">
+            <a href="<?=$urlPainel?>">MENU</a>
+            <div id="MENSAGEMRETORNO"></div>
             <h1>Escolha Um grupo</h1>
             <ul>
                 <?php Visualizacao::listarGrupos("listaGrupo")?>

@@ -4,9 +4,8 @@ include '../../painel/header.php';
 $grupo = isset($_GET['grupo'])?$_GET['grupo']:"semGrupo";
 ?>
     <body>
-        <div class="hidden"></div>
-        <a href="<?=$urlPainel?>">MENU</a>
         <div class="index-visualizacao">
+            <a href="<?=$urlPainel?>">MENU</a>
             <h1>
                 Pesquise o Item
             </h1>
