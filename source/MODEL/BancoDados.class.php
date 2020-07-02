@@ -1,10 +1,11 @@
 <?php
 
 class BancoDados {
-    private $host = "localhost";
-    private $usuario = "root"; // em producao "id10500133_adm" em dev: "root"
-    private $senha = "";// em producao: "naoseiasenha" em dev: ""
-    private $nomeBanco = "id10500133_bancounico";
+	//insira aqui suas informações
+    private $host = "";
+    private $usuario = "";
+    private $senha = "";
+    private $nomeBanco = "";
     
     private static $instance;
 
